@@ -33,3 +33,32 @@ Irá aparecer: Enter a file in which to save the key," aperte Enter. Sua chave s
 Irá aparecer: Enter passphrase (empty for no passphrase), aperte Enter 2 vezes. 
 
 Sua chave se encontra no diretório ~/.ssh/, arquivo será ~/.ssh/id_rsa.pub.
+
+
+### Iniciando um Projeto
+
+Crie a pasta do seu projeto e acesse ela.
+
+##### Iniciando seu projeto com git
+	git init
+
+##### Verificar estado dos arquivos/diretórios
+	git status
+
+##### Adicionando um arquivo
+Você pode propor mudanças (adicioná-las ao Index) usando
+
+	git add <arquivo>
+	git add <arquivo> <arquivo> <arquivo>
+	git add . (Adiciona todos arquivos/diretórios)
+
+##### Confirmando (Commitando) suas alterações
+Agora o arquivo é enviado para o HEAD, mas ainda não esta no repositório remoto.
+
+	git commit <meuarquivo> -m "minha mensagem de commit"
+	git commit -v (Abre seu editor configurado, onde contém o diff das alterações realizadas, podendo criar sua mensagem)
+	
+	
+
+	
+
