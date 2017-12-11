@@ -1,6 +1,6 @@
-# Commands Git #
+# Comandos Básicos Git #
 
-Basic commands for you to work on a daily basis
+Guia inicial de como utilizar o git e situações que ocorrem no dia a dia.
 
 ## Configuração
 
@@ -11,19 +11,25 @@ As configurações do GIT são armazenadas no arquivo **.gitconfig** localizado 
 As configurações realizadas através dos comandos abaixo serão incluídas no arquivo citado acima.
 
 ##### Setar usuário
-	git config --global user.name "Leonardo Comelli"
+	git config --global user.name "João Silva"
 
 ##### Setar email
-	git config --global user.email leonardo@software-ltda.com.br
+	git config --global user.email joao@gmail.com
 	
 ##### Setar editor
 	git config --global core.editor vim
 	
 ##### Setar ferramenta de merge
-	git config --global merge.tool vimdiff
-
-##### Setar arquivos a serem ignorados
-	git config --global core.excludesfile ~/.gitignore
+	git config --global merge.tool code
 
 ##### Listar configurações
 	git config --list
+
+##### Gerando chave ssh 
+	ssh-keygen -t rsa -b 4096 -C "joao@gmail.com"
+	
+Irá aparecer: Enter a file in which to save the key," aperte Enter. Sua chave ssh será gerada no diretório padrão.
+
+Irá aparecer: Enter passphrase (empty for no passphrase), aperte Enter 2 vezes. 
+
+Sua chave se encontra no diretório ~/.ssh/, arquivo será ~/.ssh/id_rsa.pub.
