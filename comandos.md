@@ -79,3 +79,17 @@ Agora o arquivo é enviado para o HEAD, mas ainda não esta no repositório remo
 ##### Exibir histório de um determinado autor
 	git log --author=usuario	
 
+
+##### Desfazendo alteração local (working directory)
+Este comando deve ser utilizando enquanto o arquivo não foi adicionado na **staged area**. 
+
+	git checkout -- meu_arquivo.txt
+
+##### Desfazendo alteração local (staging area)
+Este comando deve ser utilizando quando o arquivo já foi adicionado na **staged area**.
+
+	git reset HEAD meu_arquivo.txt
+	
+A alteração do diretório pode ser realizada através do comando abaixo:
+	
+	git checkout meu_arquivo.txt	
