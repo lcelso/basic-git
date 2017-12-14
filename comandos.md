@@ -56,9 +56,26 @@ Você pode propor mudanças (adicioná-las ao Index) usando
 Agora o arquivo é enviado para o HEAD, mas ainda não esta no repositório remoto.
 
 	git commit <meuarquivo> -m "minha mensagem de commit"
-	git commit -v (Abre seu editor configurado, onde contém o diff das alterações realizadas, podendo criar sua mensagem)
+	git commit -v (Abre seu editor configurado, onde contém o diff das alterações realizadas, 
+	podendo criar sua mensagem)
 	
-	
+##### Remover arquivo
+	git rm meu_arquivo.txt
 
+##### Remover diretório
+	git rm -r diretorio	
 	
+### Visualizar hitórico
+
+##### Exibir histórico
+	git log
+	
+##### Exibir histórico com diff das alterações
+	git log -p
+	
+##### Exibir histório de um arquivo específico
+	git log -- <caminho_do_arquivo>
+
+##### Exibir histório de um determinado autor
+	git log --author=usuario	
 
