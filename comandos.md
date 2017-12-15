@@ -102,5 +102,10 @@ A partir da tua branch atual execute o comando abaixo:
 
 	git brach
 
-	![Exemplo](imagens/tela1.png)
+
+
+![Exemplo](https://github.com/lcelso/basic-git/blob/master/imagens/tela1.png)
+
+E ele te mostra a branch atual que você esta no momento com um * na frente dela
+
 
