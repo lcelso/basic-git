@@ -102,10 +102,13 @@ A partir da tua branch atual execute o comando abaixo:
 
 	git brach
 
-
-
-![Exemplo](https://github.com/lcelso/basic-git/blob/master/imagens/tela1.png)
+![Exemplo](https://github.com/lcelso/basic-git/blob/master/imagens/branch-local.png)
 
 E ele te mostra a branch atual que você esta no momento com um * na frente dela
 
+###### Listando as branchs remotos
+
+	git brach --remote
+
+![Exemplo](https://github.com/lcelso/basic-git/blob/master/imagens/branch-remote.png)
 
