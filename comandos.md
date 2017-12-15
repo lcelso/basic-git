@@ -101,3 +101,6 @@ A partir da tua branch atual execute o comando abaixo:
 ###### Listando as branchs locais
 
 	git brach
+
+	![Exemplo](imagens/tela1.png)
+
