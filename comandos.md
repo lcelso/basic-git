@@ -92,3 +92,12 @@ Este comando deve ser utilizando quando o arquivo já foi adicionado na **staged
 	
 A alteração do diretório pode ser realizada através do comando abaixo:
 	git checkout <arquivo>
+	
+##### Criando uma nova branch
+A partir da tua branch atual execute o comando abaixo:
+
+	git checkout -b <nome-da-branch>
+
+###### Listando as branchs locais
+
+	git brach
