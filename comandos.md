@@ -2,9 +2,7 @@
 
 Guia inicial de como utilizar o git e situações que ocorrem no dia a dia.
 
-## Configuração
-
-### Geral
+### Configuração
 
 As configurações do GIT são armazenadas no arquivo **.gitconfig**, no caminho ~/.giconfig.
 
@@ -63,9 +61,7 @@ Agora o arquivo é enviado para o HEAD, mas ainda não esta no repositório remo
 	git rm meu_arquivo.txt
 
 ##### Remover diretório
-	git rm -r diretorio	
-	
-### Visualizar hitórico
+	git rm -r diretorio
 
 ##### Exibir histórico
 	git log
@@ -98,17 +94,63 @@ A partir da tua branch atual execute o comando abaixo:
 
 	git checkout -b <nome-da-branch>
 
-###### Listando as branchs locais
+##### Listando as branchs locais
 
-	git brach
+	git branch
 
 ![Exemplo](https://github.com/lcelso/basic-git/blob/master/imagens/branch-local.png)
 
 E ele te mostra a branch atual que você esta no momento com um * na frente dela
 
-###### Listando as branchs remotos
+### Repositório Remoto
+##### Exibir os repositórios remotos
 
-	git brach --remote
+	git remote -v
+
+##### Vincular repositório local com um repositório remoto
+
+	git remote add origin git@github.com:leocomelli/curso-git.git
+
+##### Exibir informações dos repositórios remotos
+
+	git remote show origin
+	
+##### Renomear um repositório remoto
+
+	git remote rename origin curso-git
+
+##### Desvincular um repositório remoto
+
+	git remote rm curso-git
+
+##### Enviar alterações para o repositório remoto
+O primeiro push de um repositório deve conter o nome do repositório remoto e o branch.
+
+	git push -u origin master
+
+Os demais pushes não precisam dessa informação
+
+	git push
+
+##### Atualizar repositório local de acordo com o repositório remoto
+Atualizar os arquivos no branch atual
+
+	git pull
+
+Buscar as alterações, mas não aplica-las no branch atual
+
+	git fecth
+
+##### Clonar um repositório remoto já existente
+
+	git clone git@github.com:leocomelli/curso-git.git
+
+##### Listando as branchs remotas
+
+	git branch --remote
 
 ![Exemplo](https://github.com/lcelso/basic-git/blob/master/imagens/branch-remote.png)
 
+##### Apagar branch remota
+
+	git push origin:nome-da-branch
