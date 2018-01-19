@@ -4,7 +4,7 @@ Guia inicial de como utilizar o git e situações que ocorrem no dia a dia.
 
 ### Configuração
 
-As configurações do GIT são armazenadas no arquivo **.gitconfig**, no caminho ~/.giconfig.
+As configurações do GIT são armazenadas no arquivo **.gitconfig**, no caminho ~/.gitconfig.
 
 As configurações realizadas através dos comandos abaixo serão incluídas no arquivo citado acima.
 
@@ -13,22 +13,22 @@ As configurações realizadas através dos comandos abaixo serão incluídas no 
 
 ##### Setar email
 	git config --global user.email joao@gmail.com
-	
+
 ##### Setar editor
 	git config --global core.editor vim
-	
+
 ##### Setar ferramenta de merge
 	git config --global merge.tool code
 
 ##### Listar configurações
 	git config --list
 
-##### Gerando chave ssh 
+##### Gerando chave ssh
 	ssh-keygen -t rsa -b 4096 -C "joao@gmail.com"
-	
+
 Irá aparecer: Enter a file in which to save the key," aperte Enter. Sua chave ssh será gerada no diretório padrão.
 
-Irá aparecer: Enter passphrase (empty for no passphrase), aperte Enter 2 vezes. 
+Irá aparecer: Enter passphrase (empty for no passphrase), aperte Enter 2 vezes.
 
 Sua chave se encontra no diretório ~/.ssh/, arquivo será ~/.ssh/id_rsa.pub.
 
@@ -54,9 +54,9 @@ Você pode propor mudanças (adicioná-las ao Index) usando
 Agora o arquivo é enviado para o HEAD, mas ainda não esta no repositório remoto.
 
 	git commit <meuarquivo> -m "minha mensagem de commit"
-	git commit -v (Abre seu editor configurado, onde contém o diff das alterações realizadas, 
+	git commit -v (Abre seu editor configurado, onde contém o diff das alterações realizadas,
 	podendo criar sua mensagem)
-	
+
 ##### Remover arquivo
 	git rm meu_arquivo.txt
 
@@ -65,19 +65,19 @@ Agora o arquivo é enviado para o HEAD, mas ainda não esta no repositório remo
 
 ##### Exibir histórico
 	git log
-	
+
 ##### Exibir histórico com diff das alterações
 	git log -p
-	
+
 ##### Exibir histório de um arquivo específico
 	git log -- <caminho_do_arquivo>
 
 ##### Exibir histório de um determinado autor
-	git log --author=usuario	
+	git log --author=usuario
 
 
 ##### Desfazendo alteração local (working directory)
-Este comando deve ser utilizando enquanto o arquivo não foi adicionado na **staged area**. 
+Este comando deve ser utilizando enquanto o arquivo não foi adicionado na **staged area**.
 
 	git checkout -- <arquivo>
 
@@ -85,10 +85,10 @@ Este comando deve ser utilizando enquanto o arquivo não foi adicionado na **sta
 Este comando deve ser utilizando quando o arquivo já foi adicionado na **staged area**.
 
 	git reset HEAD <arquivo>
-	
+
 A alteração do diretório pode ser realizada através do comando abaixo:
 	git checkout <arquivo>
-	
+
 ##### Criando uma nova branch
 A partir da tua branch atual execute o comando abaixo:
 
@@ -114,7 +114,7 @@ E ele te mostra a branch atual que você esta no momento com um * na frente dela
 ##### Exibir informações dos repositórios remotos
 
 	git remote show origin
-	
+
 ##### Renomear um repositório remoto
 
 	git remote rename origin curso-git
