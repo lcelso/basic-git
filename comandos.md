@@ -89,8 +89,7 @@ Este comando deve ser utilizando quando o arquivo já foi adicionado na **staged
 A alteração do diretório pode ser realizada através do comando abaixo:
 	git checkout <arquivo>
 
-##### Criando uma nova branch
-A partir da tua branch atual execute o comando abaixo:
+##### Criando uma branch a partir da branch atual
 
 	git checkout -b <nome-da-branch>
 
@@ -133,24 +132,34 @@ Os demais pushes não precisam dessa informação
 	git push
 
 ##### Atualizar repositório local de acordo com o repositório remoto
-Atualizar os arquivos no branch atual
-
-	git pull
-
 Buscar as alterações, mas não aplica-las no branch atual
 
 	git fecth
 
+Atualizar os arquivos no branch atual
+
+	git pull
+
 ##### Clonar um repositório remoto já existente
 
-	git clone git@github.com:leocomelli/curso-git.git
+	git clone https://github.com/NodeRedis/node_redis.git
 
 ##### Listando as branchs remotas
 
 	git branch --remote
+
+##### Criar uma branch a partir da origin
+
+	git checkout origin-feature-branch
 
 ![Exemplo](https://github.com/lcelso/basic-git/blob/master/imagens/branch-remote.png)
 
 ##### Apagar branch remota
 
 	git push origin:nome-da-branch
+
+### Referências
+
+[Git Book](https://git-scm.com/book/pt-br/v2)
+
+[Lista de comandos úteis do GIT](https://gist.github.com/leocomelli/2545add34e4fec21ec16)
