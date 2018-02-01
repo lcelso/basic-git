@@ -162,6 +162,8 @@ Atualizar os arquivos no branch atual
 
 [tig](http://gitready.com/advanced/2009/07/31/tig-the-ncurses-front-end-to-git.html)
 
+[Git Immersion](http://gitimmersion.com/)
+
 ### Referências
 
 [Git Book](https://git-scm.com/book/pt-br/v2)
