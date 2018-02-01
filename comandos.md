@@ -134,7 +134,7 @@ Os demais pushes não precisam dessa informação
 ##### Atualizar repositório local de acordo com o repositório remoto
 Buscar as alterações, mas não aplica-las no branch atual
 
-	git fecth
+	git fetch
 
 Atualizar os arquivos no branch atual
 
@@ -157,6 +157,10 @@ Atualizar os arquivos no branch atual
 ##### Apagar branch remota
 
 	git push origin:nome-da-branch
+
+### Ferramentas Úteis
+
+[tig](http://gitready.com/advanced/2009/07/31/tig-the-ncurses-front-end-to-git.html)
 
 ### Referências
 
