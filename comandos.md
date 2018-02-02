@@ -8,6 +8,11 @@ As configurações do GIT são armazenadas no arquivo **.gitconfig**, no caminho
 
 As configurações realizadas através dos comandos abaixo serão incluídas no arquivo citado acima.
 
+##### Estados
+	Modificado (modified);
+	Preparado (staged/index)
+	Consolidado (comitted);
+
 ##### Setar usuário
 	git config --global user.name "João Silva"
 
