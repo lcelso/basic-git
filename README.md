@@ -24,6 +24,11 @@ As configurações realizadas através dos comandos abaixo serão incluídas no 
 
 ##### Setar ferramenta de merge
 	git config --global merge.tool code
+##### Salvar usuário e senha por 8 horas
+	git config --global credential.helper 'cache --timeout=28800'
+
+##### Salvar usuário permanente
+	git config --global credential.helper cache
 
 ##### Listar configurações
 	git config --list
